@@ -1,9 +1,9 @@
 
 # SEO settings
-title: "Think"
-title2: "space" # default: ""
-description: "aa"
-keywords: "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
+title: "Sịp siêu"
+title2: "nhân" # default: ""
+description: "dee-dee"
+keywords: "blog, tech, deedee"
 url: http://sip-sieu-nhan.tk # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
