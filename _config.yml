@@ -2,7 +2,7 @@
 # SEO settings
 title: "Sịp siêu "
 title2: "nhân" # default: ""
-description: "dee-dee"
+description: "dee dee"
 keywords: "blog, tech, deedee"
 url: http://sip-sieu-nhan.tk # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
