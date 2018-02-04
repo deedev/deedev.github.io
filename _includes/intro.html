@@ -1,18 +1,7 @@
 <section class="intro">
   <div class="container">
-    <img src="{{ "/assets/images/code.png" }}" width="80px" height="80px" /><span class="lead deedee" id="dee"></span>
+    <img src="{{ "/assets/images/code.png" }}" width="80px" height="80px" /><span class="lead deedee" >
+      Những suy nghĩ, chiêm nghiệm của một thanh niên mang chiếc sịp siêu nhân.
+    </span>
   </div>
 </section>
-<script>
-    var color = ["#F4A460", "#8B795E", "#483D8B","#1E90FF","#008B00","#FFC125","FF0000","666666","#8B4513","#79CDCD","#436EEE"
-  ,"#00E5EE","#4EEE94","#B3EE3A","#EEC900","#EE7621","#008080"];
-    var data = "";
-    var text = "Những suy nghĩ, chiêm nghiệm của một thanh niên mang chiếc sịp siêu nhân.";
-    for(i = 0; i < text.length; i++){
-
-        var str = text[i].fontcolor(color[Math.floor(Math.random()*text.length)]);
-        data = data + str;
-    }
-    
-    document.getElementById("dee").innerHTML = data;
-  </script>
