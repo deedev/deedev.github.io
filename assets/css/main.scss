@@ -11,3 +11,8 @@
 .link:hover, .intro a:hover, .navbar a:hover, .post-link:hover, .post a:hover, .page a:hover, .pagination .prev:hover, .pagination .next:hover, .site-footer a:hover, .link:focus, .intro a:focus, .navbar a:focus, .post-link:focus, .post a:focus, .page a:focus, .pagination .prev:focus, .pagination .next:focus, .site-footer a:focus, .link:active, .intro a:active, .navbar a:active, .post-link:active, .post a:active, .page a:active, .pagination .prev:active, .pagination .next:active, .site-footer a:active {
     color: #1e1ef9;
 }
+@media (max-width:542px){
+    .date-label{
+        display: none;
+    }
+}
