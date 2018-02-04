@@ -283,7 +283,9 @@ hr {
     padding: 0 0.5em;
     background: lighten($light-gray-color, 15%);
   }
-
+.post-item a{
+  color: rgb(221, 9, 9);
+}
   .article-title {
     border-bottom: none !important;
   }
@@ -293,7 +295,7 @@ hr {
     &:focus,
     &:active {
       border-bottom: 1px solid transparent;
-      color: $blue-color;
+      color: rgb(173, 16, 16);
     }
   }
 }
