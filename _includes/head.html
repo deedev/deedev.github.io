@@ -119,10 +119,11 @@
     var text = "Những suy nghĩ, chiêm nghiệm của một thanh niên mang chiếc sịp siêu nhân.";
     for(i = 0; i < text.length; i++){
 
-        data = data + text[i].fontcolor("red");
-
+        var str = text[i].fontcolor(color[Math.floor(Math.random()*text.length)]);
+        data = data + str;
     }
-    console.log(data);
+    
+    document.getElementById("dee").innerHTML(data);
   </script>
 
 </head>
