@@ -114,8 +114,16 @@
   </script>
 
   <script>
-    var text = document.getElementsByClassName("deedee");
-    console.log(text);
+    var color = ["#F4A460", "#8B795E", "#483D8B","#1E90FF","#008B00","#FFC125","#CD0000"];
+    var data = "";
+    var text = "Những suy nghĩ, chiêm nghiệm của một thanh niên mang chiếc sịp siêu nhân.";
+    for(i = 0; i < text.length; i++){
+
+        text[i].fontcolor(color[Math.floor(Math.random()*text.length)]);
+        data = data + text[i];
+
+    }
+    console.log(data);
   </script>
 
 </head>
