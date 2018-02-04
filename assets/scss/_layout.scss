@@ -63,7 +63,6 @@ hr {
   &:hover,
   &:focus,
   &:active {
-    
   }
 }
 
@@ -278,9 +277,9 @@ hr {
   }
 
   .post-item {
-    border: 1px solid lighten($light-gray-color, 10%);
+
     padding: 0 0.5em;
-    background: lighten($light-gray-color, 15%);
+
   }
   .article-title {
     border-bottom: none !important;
