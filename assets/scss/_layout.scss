@@ -225,6 +225,8 @@ hr {
 }
 
 .site-footer {
+  position: absolute;
+  bottom: 0px;
   @extend .clearfix;
 
   padding: $base-spacing 0;
