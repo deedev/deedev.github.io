@@ -225,8 +225,6 @@ hr {
 }
 
 .site-footer {
-  padding-left: auto;
-  padding-right: auto;
   @extend .clearfix;
 
   padding: $base-spacing 0;
@@ -239,6 +237,7 @@ hr {
     display: block;
     font-size: rem(12);
     color: darken($medium-gray-color, 10%);
+    text-align: center;
   }
 
   .block {
