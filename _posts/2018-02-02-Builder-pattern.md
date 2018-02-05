@@ -13,7 +13,7 @@ Hôm nay, ta sẽ tìm hiểu về Builder.
 Theo Tutorials Point:
 >Builder pattern builds a complex object using simple objects and using a step by step approach. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
 
-Tóm lại thì, Builder pattern là 1 design pattern thuộc nhóm creational, sử dụng nguyên lý của Nested Class[[^1]], dùng để tạo các Object phức tạp.
+Tóm lại thì, Builder pattern là 1 design pattern thuộc nhóm creational, sử dụng nguyên lý của Nested Class [[^1]] , dùng để tạo các Object phức tạp.
 ### Khi nào dùng Builder?
 Như trên, khi cần tạo các Object phức tạp, các Object có nhiều thuộc tính, trong có có những thuộc tính bắt buộc, có những thuộc tính không bắt buộc, hoặc các Object có tính tùy biến cao.
 Ví dụ thực tế: Muốn pha 1 cốc nước để uống, thì có người thích cho đường + chanh, có người thích chanh muối, người thích đường + chanh + đá, ... rất nhiều lựa chọn. Khi đó, muốn xây dượng 1 lớp thực hiện công việc pha 1 cốc nước uống, ta sẽ dùng Builder.
@@ -28,7 +28,7 @@ Ví dụ thực tế: Muốn pha 1 cốc nước để uống, thì có người
         private boolean Muoi;
     }
 ```
-Bình thường, nếu chưa biết Builder thì sẽ có 2 cách giải quyết vấn đề này: Dùng getter/setter (ai cũng biết cả kaka), hoặc dùng 1 kĩ thuật gọi là telescoping constructor[[^2]] (tạo nhiều hàm khởi tạo ).
+Bình thường, nếu chưa biết Builder thì sẽ có 2 cách giải quyết vấn đề này: Dùng getter/setter (ai cũng biết cả kaka), hoặc dùng 1 kĩ thuật gọi là telescoping constructor [[^2]] (tạo nhiều hàm khởi tạo ).
 Cả 2 cách này đều có vấn đề là code trông chán ứ chịu được, nhìn vào code tạo một đối tượng Demo, ta không biết nó gồm những gì, phải nhớ các thuộc tính bắt buộc (telescoping constructor).
 
 ```java
@@ -105,7 +105,9 @@ Bây giờ sẽ tạo mới 1 đối tượng nhé:
     //WOW, trông code dễ hiểu hơn hẳn, nhìn là biết thành phần gồm những gì :))
 ```
 BYEBYE-DEEDEE
+
 ---
 Footnote:
 [^1]: 1: Nested Class  [click here!]("https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html")
+
 [^2]: 2: Telescoping Constructor [click here!]("http://www.captaindebug.com/2011/05/telescoping-constructor-antipattern.html#.WnfgDOf7LDc")
