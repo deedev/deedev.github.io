@@ -8,7 +8,9 @@ keywords: "DI, Dependence Injection, Java"
 Theo như trên Google : 
 >Dependence Injection là một mẫu lập trình (Design pattern), được sử dụng để cố gắng đạt được sự không phụ thuộc giữa các Objeect với nhau khi có quan hệ phụ thuộc giữa Object này với một Object khác.
 
-Đọc cái định nghĩa này thì, haizz, có thánh mới hiểu được. Nó quá trừu tượng. Nhưng không sao, bây giờ ta sẽ vào một ví dụ cụ thể: Giả sử chúng ta làm một hệ thống quản lý 1 trung tâm mua sắm chẳng hạn và cần tính năng thông báo các chương trình khuyến mãi tới khách hàng qua Email của họ.
+Đọc cái định nghĩa này thì, haizz, có thánh mới hiểu được. Nó quá trừu tượng.
+Áp dụng DI vào code, mặc dù làm cho code của ta trông phức tạp hơn, nhưng ngược lại sẽ làm cho hệ thống trở nên mềm dẻo, dễ nâng cấp hơn. 
+Bây giờ ta sẽ vào một ví dụ cụ thể : Giả sử chúng ta làm một hệ thống quản lý 1 trung tâm mua sắm chẳng hạn và cần tính năng thông báo các chương trình khuyến mãi tới khách hàng qua Email của họ.
 Với yêu cầu này, ta sẽ xây dựng 1 class MailSender để gửi mail thông báo tới khách hàng:
 ```java
     public class MailSender{
@@ -22,7 +24,7 @@ Và Class Account lưu thông tin khách hàng:
     public class Account{
         private String Name;
         private String Email;
-
+        
         //code xử lý cái gì gì đó
         public void NotifyService(){
             MailSender mailsender = new MailSender();
@@ -32,8 +34,8 @@ Và Class Account lưu thông tin khách hàng:
 ```
 Đoạn code trên thì có vấn đề gì không? Câu trả lời là có.
 Trong lớp Account, ta khởi tạo 1 đối tượng MailSender, tức là lớp Account phụ thuộc cứng vào lớp MailSender. Khi ta không muốn thông báo bằng  Email nữa, chuyển sang bằng SMS chẳng hạn, ta phải tiến hành sửa Class Account, và các Class khác - các Class cũng sử dụng MailSender.
-Và để giải quyết được vấn đề này, ta sẽ sử dụng Dependence Injection.
 
+Và để giải quyết được vấn đề này, ta sẽ sử dụng Dependence Injection.
 Đầu tiên ta sẽ tạo 1 Interface ISender, các class như SMSSender, EmailSender...sẽ Implement Interface này.
 ```java
     public interface ISender{
@@ -62,7 +64,6 @@ OK, và class Account:
         private String Name;
         private String Email;
         private ISender _isender;
-
         //Bạn có thể truyền ISender qua setter, nhưng mình thích cách này hơn :))
         public Account(ISender sender){
             _isender = sender;
@@ -93,4 +94,4 @@ Hàm Main trong chương trình:
     acc.NotifyService("DI");
     ///...
 ```
-Trên đây là ý hiểu cảu mình sau khi tìm hiểu về DI, chắc là có nhiều sai sót. :))
+Trên đây là ý hiểu của mình sau khi tìm hiểu về DI, chắc là có nhiều sai sót. :))
