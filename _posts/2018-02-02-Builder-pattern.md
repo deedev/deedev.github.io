@@ -108,6 +108,7 @@ BYEBYE-DEEDEE
 
 ---
 Footnote:
-[^1]: 1: Nested Class  [click here!]("https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html")
+
+[^1]: 1: Nested Class [click here!]("https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html")
 
 [^2]: 2: Telescoping Constructor [click here!]("http://www.captaindebug.com/2011/05/telescoping-constructor-antipattern.html#.WnfgDOf7LDc")
