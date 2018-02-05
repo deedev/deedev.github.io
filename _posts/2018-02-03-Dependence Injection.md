@@ -5,4 +5,4 @@ description: "Dependence Injection"
 comments: true
 keywords: "DI, Dependence Injection, Java"
 ---
-{%gits 25090ac0b0e5251a1c3b554fe9398e19 %}
+{% gist 25090ac0b0e5251a1c3b554fe9398e19 %}
