@@ -10,6 +10,7 @@ Theo như trên Google :
 
 Đọc cái định nghĩa này thì, haizz, có thánh mới hiểu được. Nó quá trừu tượng.
 Áp dụng DI vào code, mặc dù làm cho code của ta trông phức tạp hơn, nhưng ngược lại sẽ làm cho hệ thống trở nên mềm dẻo, dễ nâng cấp hơn. 
+
 Bây giờ ta sẽ vào một ví dụ cụ thể : Giả sử chúng ta làm một hệ thống quản lý 1 trung tâm mua sắm chẳng hạn và cần tính năng thông báo các chương trình khuyến mãi tới khách hàng qua Email của họ.
 Với yêu cầu này, ta sẽ xây dựng 1 class MailSender để gửi mail thông báo tới khách hàng:
 ```java
@@ -24,7 +25,7 @@ Và Class Account lưu thông tin khách hàng:
     public class Account{
         private String Name;
         private String Email;
-        
+
         //code xử lý cái gì gì đó
         public void NotifyService(){
             MailSender mailsender = new MailSender();
