@@ -1,10 +1,10 @@
 
 # SEO settings
-title: "Sịp siêu "
-title2: "nhân" # default: ""
+title: "Óc"
+title2: " chó" # default: ""
 description: "dee dee"
 keywords: "blog, tech, deedee"
-url: http://sip-sieu-nhan.tk # site url
+url: http://oc-cho.tk # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
@@ -32,10 +32,10 @@ sass:
 author:
   name     : "dee-dee"
   job      : ""
-  bio      : "Những suy nghĩ, chiêm nghiệm của một thanh niên mang trong mình chiếc sịp siêu nhân."
+  bio      : "Những suy nghĩ, chia sẻ trong quá trình học tập của một thanh niên thích ăn quả óc chó."
   thumb    : assets/images/author.jpg
   email    : nguyenduong199100@gmail.com
-  url      : http://sip-sieu-nhan.tk
+  url      : http://oc-cho.tk
   github   : http://github.com/deedev
   twitter  : http://twitter.com/
   facebook : https://www.facebook.com/wow.161621996
