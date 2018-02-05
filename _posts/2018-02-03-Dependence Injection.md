@@ -90,6 +90,7 @@ Hàm Main trong chương trình:
 ```java
     ///code gì gì...
     Account acc = new Account(new Config.getConfig());
+    acc.NotifyService("DI");
     ///...
 ```
 Trên đây là ý hiểu cảu mình sau khi tìm hiểu về DI, chắc là có nhiều sai sót. :))
