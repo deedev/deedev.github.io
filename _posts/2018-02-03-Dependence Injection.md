@@ -26,7 +26,7 @@ Và Class Account lưu thông tin khách hàng:
         //code xử lý cái gì gì đó
         public void NotifyService(){
             MailSender mailsender = new MailSender();
-            mailsender.notify(Email);
+            mailsender.Notify(Email);
         }
     }
 ```
