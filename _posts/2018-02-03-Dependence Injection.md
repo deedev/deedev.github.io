@@ -11,7 +11,7 @@ Theo như trên Google :
 Đọc cái định nghĩa này thì, haizz, có thánh mới hiểu được. Nó quá trừu tượng. Nhưng không sao, bây giờ ta sẽ vào một ví dụ cụ thể: Giả sử chúng ta làm một hệ thống quản lý 1 trung tâm mua sắm chẳng hạn và cần tính năng thông báo các chương trình khuyến mãi tới khách hàng qua Email của họ.
 Với yêu cầu này, ta sẽ xây dựng 1 class MailSender để gửi mail thông báo tới khách hàng:
 ```java
-    public class MainSender{
+    public class MailSender{
         public void Notify(String email){
             //code xử lý...
         }
