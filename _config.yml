@@ -2,7 +2,6 @@
 # SEO settings
 title: "Óc"
 title2: " chó" # default: ""
-description: "dee dee"
 keywords: "blog, tech, deedee"
 url: http://oc-cho.tk # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
