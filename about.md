@@ -1,7 +1,6 @@
 ---
 layout: page
-title: 
-image: /assets/images/dog.png
+title:
 permalink: /about/
 ---
 >Cuộc sống của mỗi người bị hạn chế trong không gian và trong thời gian. Mỗi người chỉ có thể sống một cuộc sống, tại mỗi thời điểm chỉ có thể có một vị trí. Trang sách chính là cửa sổ mở sang những cuộc đời khác, những thế giới khác. Và cũng là chỗ để ánh sáng mặt trời dọi vào cuộc đời mình.
