@@ -14,7 +14,7 @@ Proxy (đại diện) được sử dụng khi:
 ![Proxy](/assets/images/Proxy.PNG)
 
 
-Class Demo sẽ sử dụng ProxyImage để load Image và hiển thị nó khi cần thiết.
+Class Demo sẽ sử dụng ImageProxy để load Image và hiển thị nó khi cần thiết.
 ```java
 public interface Image{
     public void ShowImage();
