@@ -7,7 +7,7 @@ keywords: "Design pattern, Proxy pattern, Java"
 ---
 Proxy Pattern là Design pattern thuộc nhóm cấu trúc (structural pattern).
 Proxy (đại diện) được sử dụng khi: 
-1. Muốn quản lý hoặc bảo vệ một đối tượng, không để cho Client truy cập trực tiếp tới đối tượng đó, mọi truy cập phải qua Proxy, do Proxy quản lý. 
+1. Muốn quản lý hoặc bảo vệ một đối tượng, không để cho Client truy cập trực tiếp tới đối tượng đó, mọi truy cập phải qua Proxy, do Proxy quản lý - gần như kiểu firewall ý nhỉ :))
 2. Tiết kiệm bộ nhớ, băng thông, tăng hiệu năng: Chỉ tạo đối tượng khi thật sự cần thiết, chỉ tạo 1 lần
 
 #### Ví dụ :
