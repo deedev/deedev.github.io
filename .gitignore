@@ -1,6 +1,5 @@
 _site/
 .sass-cache/
-.bundle/
 
 # Windows image file caches
 Thumbs.db
@@ -35,13 +34,9 @@ $RECYCLE.BIN/
 # Thumbnails
 ._*
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
+# Files that might appear on external disk
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
 
 # Directories potentially created on remote AFP share
 .AppleDB
