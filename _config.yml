@@ -1,8 +1,8 @@
 
 # SEO settings
-title: "Óc"
-title2: " chó" # default: ""
-description: "quả óc chó"
+title: "Dee"
+title2: " dee.tk" # default: ""
+description: ""
 keywords: "blog, tech, deedee"
 url: http://dee-dee.tk # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
