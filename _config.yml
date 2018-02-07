@@ -1,52 +1,60 @@
-# Site Info
-title:              "Dee dee"
-description:        "The Plain is a minimalist Jekyll theme, that's it. Can't say anymore..."
-google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
-google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
-# Author Info
-author_name:        "dee-dee" # Your name here
-author_email:       nguyenduong199100@gmail.com # Your email here
-author_gravatar:    2b38b1b0e7e08b69379bd61582adf0c8 # Your Gravatar md5 hash here for logo
-twitter_username:    # Your Twitter username here
-github_username:    deedev # Your GitHub username here
+# SEO settings
+title: "Óc"
+title2: " chó" # default: ""
+description: "quả óc chó"
+keywords: "blog, tech, deedee"
+url: http://oc-cho.tk # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
 
-# Site Settings
-url:                https://dee-dee.tk # main url
-baseurl:            / # for gh-pages
-permalink:          /notes/:title # Post permalink
-timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-mathjax:            true  # enables support for mathjax - set to false to disable
+favicon: dog.png
+google_analytics: UA-XXXXX-XX
+repo: http://github.com/deedev/
+disqus_shortname: "dee-dee"
+twitter_username: ""
+comments: false
 
-# Site Build
-highlighter:        rouge
-markdown:           kramdown
-kramdown:
-    input:          GFM
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
 sass:
-    style:          :compressed
+  sass_dir: assets/scss
+  style: compressed # expanded
 
-# Other Params
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+# Author settings
+author:
+  name     : "dee-dee"
+  job      : ""
+  bio      : "Những suy nghĩ, chia sẻ trong quá trình học tập của một thanh niên thích ăn quả óc chó."
+  thumb    : assets/images/author.jpg
+  email    : nguyenduong199100@gmail.com
+  url      : http://oc-cho.tk
+  github   : http://github.com/deedev
+  twitter  : http://twitter.com/
+  facebook : https://www.facebook.com/wow.161621996
+  linkedin : http://linkedin.com/in/
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: ""
+
 gems:
-  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
 
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
 
-
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
-  -
-    scope:
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      type:         "posts"
-    values:
-      layout:       "post"
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

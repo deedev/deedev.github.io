@@ -1,20 +1,14 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		{% include head.html %}
-	</head>
-
-	<body>
-
-		{% include header.html %}
-
-		<main>
-			{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
-		</main>
-
-		{% include footer.html %}
-
-	</body>
-
+<html>
+  {% include head.html %}
+  <body>
+    <main class="wrapper">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </body>
 </html>
