@@ -144,8 +144,9 @@ hr {
   display: block;
 
   a {
-    color: $action-color;
-    font-weight: bold;
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
   }
 
   .article-title {
