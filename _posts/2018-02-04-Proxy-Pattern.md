@@ -14,7 +14,7 @@ Proxy (đại diện) được sử dụng khi:
 ![Proxy](/assets/images/Proxy.PNG)
 
 
-Class Demo sẽ sử dụng ImageProxy để load Image và hiển thị nó khi cần thiết.
+Class Demo sẽ sử dụng ProxyImage để load Image và hiển thị nó khi cần thiết.
 ```java
 public interface Image{
     public void ShowImage();
@@ -35,11 +35,11 @@ public class RealImage implements Image{
     }
 }
 
-public class ImageProxy implements Image{
+public class ProxyImage implements Image{
     private String fileName;
     private RealImage realImage;
 
-    public ImageProxy(String fileName){
+    public ProxyImage(String fileName){
         fileName = fileName;
     }
 
@@ -53,9 +53,9 @@ public class ImageProxy implements Image{
 }
 public class Demo{
     public static void main(String[] args){
-        Image img = new ImageProxy("ahihi.png");
+        Image img = new ProxyImage("ahihi.png");
         img.ShowImage();
-        //từ lần tới khi sử dụng sẽ không load lại Image nữa
+        ///từ lần tới khi sử dụng sẽ không phải load lại Image nữa
     }
 }
 ```
