@@ -12,7 +12,9 @@ Proxy (đại diện) được sử dụng khi:
 
 #### Ví dụ :
 ![Proxy](/assets/images/Proxy.PNG)
-Class Demo dẽ sử dụng ProxyImage để load Image và hiển thị nó khi cần thiết.
+
+
+Class Demo sẽ sử dụng ProxyImage để load Image và hiển thị nó khi cần thiết.
 ```java
 public interface Image{
     public void ShowImage();
