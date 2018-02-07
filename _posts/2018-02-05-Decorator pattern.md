@@ -79,4 +79,3 @@ Hàm main của chúng ta:
     ///Shape:Retangle
     ///Color:RED
 ```
-{%gist 45ba43236a02ceca291392428081774e %}
