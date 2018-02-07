@@ -65,11 +65,11 @@ Hàm main của chúng ta:
 ```java
     public class Main {
         public static void main(String[] args) {
-            Decorator decorator = new Decorator(new Circle());
-            decorator.Draw();
+            Shape circle = new Decorator(new Circle());
+            circle.Draw();
             System.out.println("---------------");
-            Decorator decorator1 = new Decorator(new Retangle());
-            decorator1.Draw();
+            Shape retangle = new Decorator(new Retangle());
+            retangle.Draw();
             }
     }
     //kết quả:
