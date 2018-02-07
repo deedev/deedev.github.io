@@ -67,11 +67,10 @@ hr {
 }
 
 .site-header {
-  border-bottom: 1px solid lighten($light-gray-color, 5%);
+  border-bottom: 1px solid #d9d9d9;
   margin-bottom: 0px;
-  min-height: 80px;
-  line-height: 40px;
-  
+  line-height: 32px;
+  margin-top: -15px;
 }
 
 .intro {
@@ -91,13 +90,12 @@ hr {
 }
 
 .logo {
-  float: left;
-  margin: 0 0 1em 0;
-  cursor: pointer;
-  letter-spacing: 0.8px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 300;
+    float: left;
+    margin: 0 0 1em 0;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    line-height: 32px;
 
   span {
     font-weight: 700;
