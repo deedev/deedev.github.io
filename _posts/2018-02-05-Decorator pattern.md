@@ -11,7 +11,8 @@ Theo Tutorials Point:
 
 Decorator pattern được sử dụng khi ta muốn thêm mới 1 chức năng cho 1 đối tượng nào đó mà không phải sửa Class.
 Ví dụ thế này: 
-![Decorator](/assets/images/Decorator.png)
+<img src="/assets/images/Decorator.png" />
+
 ```java
     public interface Shape{
         public void Draw();
