@@ -4,7 +4,7 @@ title: "Óc"
 title2: " chó" # default: ""
 description: "quả óc chó"
 keywords: "blog, tech, deedee"
-url: http://oc-cho.tk # site url
+url: http://dee-dee.tk # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
